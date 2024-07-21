@@ -18,12 +18,13 @@ connection.connect((err) => {
   console.log('Connected to MySQL database.');
 
   const users = [
-    { username: 'Eva Levy', password: 'eva16', access_code: '123' },
-    { username: 'Shyrel Journo', password: 'Shyrel23', access_code: '234' },
-    { username: 'Daniella Elbaz', password: 'Daniella12', access_code: '456' },
-    { username: 'Emma Atlan', password: 'Emma09', access_code: '789' },
-    { username: 'Shyrel Cohen', password: 'shyrel24', access_code: '910' }
+    { username: 'eva', password: 'eva1', access_code: '1235' },
+    { username: 'lola', password: 'lola2', access_code: '1236' },
+    { username: 'shyrel', password: 'shyrel3', access_code: '1237' },
+    { username: 'emma', password: 'emma4', access_code: '1234' },
+    { username: 'ava', password: 'ava5', access_code: '1238' }
   ];
+
 
   users.forEach((user) => {
     bcrypt.hash(user.password, saltRounds, (err, hash) => {
