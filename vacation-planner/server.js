@@ -12,5 +12,5 @@ app.use('/api/auth', authRoutes);
 app.use('/api/preferences', preferenceRoutes);
 
 app.listen(port, () => {
-  console.log(`Express server running at http://localhost:${port}`);
+  console.log(`Express server running at http://localhost:3000`);
 });
